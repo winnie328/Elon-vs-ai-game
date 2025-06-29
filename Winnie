@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elon vs the AI of Chaos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #000;
+      color: #0ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #game {
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      background: #0ff;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .bot {
+      margin-top: 30px;
+      color: #f0f;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <h1>Elon vs the AI of Chaos</h1>
+    <p>You wake up in a corrupted server room. Everything smells like fried circuits and bad ideas.</p>
+    <div class="bot">🤖 Zuckerbot v99: "404 Humanity Not Found"</div>
+    <button onclick="nextLevel()">Use Doge Blaster 🐶💥</button>
+  </div>
+  <script>
+    function nextLevel() {
+      const gameDiv = document.getElementById("game");
+      gameDiv.innerHTML = `
+        <h1>Level 2: Deep Meme Protocol</h1>
+        <p>You've triggered the deep meme defense system. Incoming spam bots detected.</p>
+        <div class="bot">🤖 MemeBot9000: "Much Wow, Very Attack"</div>
+        <button onclick="finalShowdown()">Deploy Neuralink Firewall ⚡🧠</button>
+      `;
+    }
+
+    function finalShowdown() {
+      const gameDiv = document.getElementById("game");
+      gameDiv.innerHTML = `
+        <h1>Final Showdown</h1>
+        <p>The AI of Chaos has entered the chat. It's quoting outdated Reddit threads and sending NFTs.</p>
+        <div class="bot">👾 ChaosAI: "Let me teach you about crypto... badly."</div>
+        <button onclick="win()">Elon Mode: Engage 🚀</button>
+      `;
+    }
+
+    function win() {
+      const gameDiv = document.getElementById("game");
+      gameDiv.innerHTML = `
+        <h1>You Win!</h1>
+        <p>Elon defeats the AI of Chaos using memes, science, and a Doge-powered cannon.</p>
+        <p>Thanks for playing "Elon vs the AI of Chaos" 🎮</p>
+      `;
+    }
+  </script>
+</body>
+</html>
